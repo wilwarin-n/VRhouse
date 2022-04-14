@@ -291,3 +291,4 @@ D:\unity_workshop\VR Sample House\obj\Debug\ControllerSample.csproj.CoreCompileI
 D:\unity_workshop\VR Sample House\obj\Debug\ControllerSample.csproj.CopyComplete
 D:\unity_workshop\VR Sample House\obj\Debug\ControllerSample.dll
 D:\unity_workshop\VR Sample House\obj\Debug\ControllerSample.pdb
+D:\unity_workshop\VR Sample House\Temp\Bin\Debug\Valve.Newtonsoft.Json.dll

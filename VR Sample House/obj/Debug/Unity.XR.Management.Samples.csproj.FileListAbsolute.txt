@@ -290,3 +290,4 @@ D:\unity_workshop\VR Sample House\obj\Debug\Unity.XR.Management.Samples.csproj.C
 D:\unity_workshop\VR Sample House\obj\Debug\Unity.XR.Management.Samples.csproj.CopyComplete
 D:\unity_workshop\VR Sample House\obj\Debug\Unity.XR.Management.Samples.dll
 D:\unity_workshop\VR Sample House\obj\Debug\Unity.XR.Management.Samples.pdb
+D:\unity_workshop\VR Sample House\Temp\Bin\Debug\Valve.Newtonsoft.Json.dll
