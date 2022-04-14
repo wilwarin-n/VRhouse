@@ -7,6 +7,8 @@ namespace Valve.VR.InteractionSystem.Sample
     {
         public HoverButton hoverButton;
 
+        
+
         public GameObject prefab;
 
         private void Start()
