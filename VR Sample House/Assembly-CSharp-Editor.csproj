@@ -280,6 +280,9 @@
  <Reference Include="log4netPlastic">
  <HintPath>D:/unity_workshop/VR Sample House/Library/PackageCache/com.unity.collab-proxy@1.15.12/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
  </Reference>
+ <Reference Include="Valve.Newtonsoft.Json">
+ <HintPath>D:/unity_workshop/VR Sample House/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.Plastic.Newtonsoft.Json">
  <HintPath>D:/unity_workshop/VR Sample House/Library/PackageCache/com.unity.collab-proxy@1.15.12/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
  </Reference>
@@ -655,6 +658,9 @@
  <Reference Include="Unity.RenderPipelines.Universal.Shaders">
  <HintPath>D:/unity_workshop/VR Sample House/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.XR.OpenVR">
+ <HintPath>D:/unity_workshop/VR Sample House/Library/ScriptAssemblies/Unity.XR.OpenVR.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>D:/unity_workshop/VR Sample House/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
@@ -742,6 +748,9 @@
  <Reference Include="Unity.XR.MockHMD.Editor">
  <HintPath>D:/unity_workshop/VR Sample House/Library/ScriptAssemblies/Unity.XR.MockHMD.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.XR.OpenVR.Editor">
+ <HintPath>D:/unity_workshop/VR Sample House/Library/ScriptAssemblies/Unity.XR.OpenVR.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.Mathematics">
  <HintPath>D:/unity_workshop/VR Sample House/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
  </Reference>
@@ -794,9 +803,29 @@
       <Name>Assembly-CSharp</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
+    <ProjectReference Include="SteamVR_Input_Editor.csproj">
+      <Project>{FE3E6C1B-09BC-F5F6-81B4-19EDE930B1EF}</Project>
+      <Name>SteamVR_Input_Editor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="SteamVR_Windows_EditorHelper.csproj">
+      <Project>{B28BCE20-1E7E-3F4F-B1B0-FAF3C16BF8A8}</Project>
+      <Name>SteamVR_Windows_EditorHelper</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
     <ProjectReference Include="ControllerSample.csproj">
       <Project>{3F209FDE-2A52-7FF2-6A1B-257D14E84BE4}</Project>
       <Name>ControllerSample</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="SteamVR_Editor.csproj">
+      <Project>{0507AE2A-5938-8510-41D8-D2569EA24355}</Project>
+      <Name>SteamVR_Editor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="SteamVR.csproj">
+      <Project>{5985F1A5-BF32-5F40-D4B8-80B0FD39843E}</Project>
+      <Name>SteamVR</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Unity.XR.Management.Samples.Editor.csproj">

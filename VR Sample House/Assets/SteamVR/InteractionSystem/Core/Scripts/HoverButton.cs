@@ -41,6 +41,9 @@ namespace Valve.VR.InteractionSystem
 
         private Hand lastHoveredHand;
 
+        public GameObject _light;
+
+
         private void Start()
         {
             if (movingPart == null && this.transform.childCount > 0)
@@ -99,13 +102,20 @@ namespace Valve.VR.InteractionSystem
         {
             buttonDown = wasEngaged == false && isEngaged == true;
             buttonUp = wasEngaged == true && isEngaged == false;
+            
 
             if (buttonDown && onButtonDown != null)
                 onButtonDown.Invoke(lastHoveredHand);
+
             if (buttonUp && onButtonUp != null)
                 onButtonUp.Invoke(lastHoveredHand);
+
             if (isEngaged && onButtonIsPressed != null)
+            {
                 onButtonIsPressed.Invoke(lastHoveredHand);
+              
+            }
+                
         }
     }
 }
