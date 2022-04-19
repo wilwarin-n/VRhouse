@@ -80,6 +80,7 @@
     <Compile Include="Assets\_Course Library\Scripts\Actions\ChangeMaterial.cs" />
     <Compile Include="Assets\SwitchDoor.cs" />
     <Compile Include="Assets\_Course Library\Scripts\Testing\DisplayFPS.cs" />
+    <Compile Include="Assets\Wobble.cs" />
     <Compile Include="Assets\_Course Library\Scripts\Actions\FadeCanvasOnOverlap.cs" />
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\_Course Library\Scripts\Actions\ToggleVisibility.cs" />
@@ -93,6 +94,8 @@
     <Compile Include="Assets\_Course Library\Scripts\Conditions\OnTilt.cs" />
     <Compile Include="Assets\_Course Library\Scripts\Actions\SetMaterialColor.cs" />
     <Compile Include="Assets\_Course Library\Scripts\Actions\ToggleParticle.cs" />
+    <Compile Include="Assets\RemoteControl.cs" />
+    <Compile Include="Assets\doorHandle.cs" />
     <Compile Include="Assets\_Course Library\Scripts\Conditions\OnTimedInterval.cs" />
     <Compile Include="Assets\SwitchLightV2.cs" />
     <Compile Include="Assets\_Course Library\Scripts\Actions\PlayAnimation.cs" />
@@ -126,20 +129,27 @@
     <Compile Include="Assets\PlayerMovement.cs" />
     <Compile Include="Assets\_Course Library\Scripts\Actions\PlayContinuousSound.cs" />
     <Compile Include="Assets\_Course Library\Scripts\Actions\MatchRotation.cs" />
+    <Compile Include="Assets\ClockAnimator.cs" />
     <Compile Include="Assets\_Course Library\Scripts\Actions\LaunchProjectile.cs" />
     <Compile Include="Assets\_Course Library\Scripts\Conditions\OnVelocity.cs" />
     <Compile Include="Assets\_Course Library\Scripts\Actions\DestroyObject.cs" />
-    <Compile Include="Assets\doorHandle.cs" />
+    <Compile Include="Assets\GlassPack\Scripts\Glass_CameraMove.cs" />
+    <Compile Include="Assets\GlassPack\Scripts\Offer\ALIyerEdonAssets_Lighting.cs" />
+    <Compile Include="Assets\GlassPack\Scripts\Offer\LightingTools_Offer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Samples\OpenXR Plugin\1.3.1\Intercept Feature\InterceptFeaturePlugin\universalwindows\arm64\InterceptFeaturePlugin.dll" />
     <None Include="Assets\Samples\OpenXR Plugin\1.3.1\Intercept Feature\InterceptFeaturePlugin\universalwindows\x64\InterceptFeaturePlugin.dll" />
     <None Include="Assets\Samples\OpenXR Plugin\1.3.1\Intercept Feature\InterceptFeaturePlugin\universalwindows\arm32\InterceptFeaturePlugin.dll" />
     <None Include="Assets\MeshingFeaturePlugin\windows\x64\MeshingFeaturePlugin.dll" />
+    <None Include="Assets\GlassPack\Shaders\Glass_Metallic.shader" />
     <None Include="Assets\MeshingFeaturePlugin\universalwindows\arm32\MeshingFeaturePlugin.dll" />
     <None Include="Assets\_Course Library\Licenses.txt" />
     <None Include="Assets\MeshingFeaturePlugin\universalwindows\arm64\MeshingFeaturePlugin.dll" />
     <None Include="Assets\MeshingFeaturePlugin\universalwindows\x64\MeshingFeaturePlugin.dll" />
+    <None Include="Assets\GlassPack\Help\Quick Start.txt" />
+    <None Include="Assets\GlassPack\Shaders\Glass_Gen_2.shader" />
+    <None Include="Assets\GlassPack\Shaders\Glass_Specular.shader" />
     <None Include="Assets\Samples\OpenXR Plugin\1.3.1\Intercept Feature\InterceptFeaturePlugin\windows\x64\InterceptFeaturePlugin.dll" />
   </ItemGroup>
   <ItemGroup>
@@ -885,6 +895,10 @@
     <ProjectReference Include="Unity.XR.Management.Samples.Editor.csproj">
       <Project>{3E6C9237-8FAD-DD2D-FE5A-1AC18F79B6B7}</Project>
       <Name>Unity.XR.Management.Samples.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="SteamVR_Actions.csproj">
+      <Project>{90592BE8-C5DB-DA27-1E63-5644283F6133}</Project>
+      <Name>SteamVR_Actions</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.XR.Management.Samples.csproj">
       <Project>{6EB66631-2F95-9101-996D-10DD16BA555B}</Project>

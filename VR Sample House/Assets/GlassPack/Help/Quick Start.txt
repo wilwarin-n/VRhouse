@@ -1,0 +1,14 @@
+Hi
+
+Thank you for your purchase
+
+You have 2 shader types in these pack for glasses :
+
+1. Glass/Gen.2/Glass Specular
+2. Glass/Glass Specular
+3. Glass/Glass Metallic
+
+What are these:
+1. Use this shader for Refraction support for glass
+2. Use this shader for non Refraction support
+3. Use this shader for liquid

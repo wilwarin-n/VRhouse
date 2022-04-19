@@ -42,10 +42,15 @@ namespace Valve.VR.InteractionSystem
             Debug.Log("Switch Light");
         }*/
 
-        public void switchlight(Hand fromHand)
+        public void switchlightUp(Hand fromHand)
         {
             
-            _light.SetActive(_light.activeSelf);
+            _light.SetActive(false);
+        }
+
+        public void switchlightDown(Hand fromhand)
+        {
+            _light.SetActive(true);
         }
         
 

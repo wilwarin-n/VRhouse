@@ -1127,7 +1127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   teleportAction:
     actionPath: /actions/default/in/Teleport
-    needsReinit: 1
+    needsReinit: 0
   traceLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
