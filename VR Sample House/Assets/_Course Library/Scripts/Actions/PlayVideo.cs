@@ -31,13 +31,10 @@ namespace Valve.VR.InteractionSystem
         private Material offMaterial = null;
         private int index = 0;
 
-        public bool play;
-        public bool pause;
-        public bool seek;
+        
 
 
-
-        public RemoteControl remote;
+        
         private void Awake()
         {
             meshRenderer = GetComponent<MeshRenderer>();
@@ -62,6 +59,7 @@ namespace Valve.VR.InteractionSystem
             if (playAtStart)
             {
                 Play();
+                NextClip();
             }
             else
             {
