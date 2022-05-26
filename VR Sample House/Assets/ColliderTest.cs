@@ -39,12 +39,13 @@ public class ColliderTest : MonoBehaviour
     void OnTriggerEnter(Collider col)
     {
         Debug.Log("Trigger'a giriþ yapýldý.");
-        
-        if (col.transform.tag == "Player")
+
+        if (col.tag == "Player")
         {
             
             pLayerInZone=true;
             txtDisplay.SetActive(true);
+            
         }
         
     }
@@ -54,10 +55,11 @@ public class ColliderTest : MonoBehaviour
 
         Debug.Log("Trigger'dan çýkýþ yapýldý.");
 
-        if (col.transform.tag == "Player")
+        if (col.tag == "Player")
         {
             pLayerInZone = false;
             txtDisplay.SetActive(false);
+            
         }
 
     }

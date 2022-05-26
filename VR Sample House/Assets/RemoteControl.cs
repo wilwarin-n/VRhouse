@@ -1,4 +1,4 @@
-/*using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -22,8 +22,6 @@ namespace Valve.VR.InteractionSystem
 
         public SteamVR_Action_Boolean actionPause = SteamVR_Input.GetAction<SteamVR_Action_Boolean>("remote", "Pause"); 
         
-        
-
         public SteamVR_Action_Boolean actionSeek = SteamVR_Input.GetAction<SteamVR_Action_Boolean>("remote", "Seek");
 
         public PlayVideo video;
@@ -38,24 +36,24 @@ namespace Valve.VR.InteractionSystem
         {
             SteamVR_Input_Sources hand = interactable.attachedToHand.handType;
 
-            bool play = false;
-            bool pause = false;
+            bool b_play = false;
+            bool b_pause = false;
             
             bool seek = false;
+            float play = 0;
 
             if (interactable.attachedToHand)
             {
-                play = actionPlay.GetState(hand);
-                pause = actionPause.GetState(hand);
-                
+                b_play = actionPlay.GetState(hand);
+                b_pause = actionPause.GetState(hand);
                 seek = actionSeek.GetState(hand);
 
+                play = b_play ? 1 : 0; 
             }
 
-            video.play = play;
-            video.pause = pause;
+            btnplay.localScale = new Vector3(1, 1, b_play ? 0.4f : 1.0f);
+            btnpause.localScale = new Vector3(1, 1, b_pause ? 0.4f : 1.0f);
             
-            video.seek = seek;
         }
     }
-}*/
+}

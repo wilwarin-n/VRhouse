@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Collections;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 
 namespace Valve.VR.InteractionSystem
@@ -16,45 +17,102 @@ namespace Valve.VR.InteractionSystem
 
         
 
-        public GameObject _light;
+        public Light _light;
 
-        //public UnityEvent switchs;
+        public static bool playerIn;
+
+        public Slider sliderInt;
+        
+        public Slider sliderR;
+        public Slider sliderG;
+        
+
+        public float defaultValue;
+
+        
+
+        
+
+        
 
         void Start()
         {
-            /*if(switchs != null)
-                switchs = new UnityEvent();
-            switchs.AddListener(switchlight);
-            _light.SetActive(false);*/
+            
+
+            playerIn = false;
+
+            sliderInt = GameObject.Find("sliderInt").GetComponent<Slider>();
+            
+            sliderR = GameObject.Find("sliderR").GetComponent<Slider>();
+            
+            sliderG = GameObject.Find("sliderG").GetComponent<Slider>();
+
+            
+
+            
+
+            defaultValue = 2f;
+            sliderInt.value = defaultValue;
+
+
+            /*sliderInt.gameObject.SetActive(false);
+            sliderRGB.gameObject.SetActive(false);*/
+
+            
         }
 
         // Update is called once per frame
         void Update()
         {
-            /*if (switchs != null)
-            {
-                switchs.Invoke();
-            }*/
-        }
-
-        /*void switchlight()
-        {
-            Debug.Log("Switch Light");
-        }*/
-
-        public void switchlightUp(Hand fromHand)
-        {
             
-            _light.SetActive(false);
+
+            _light.intensity = sliderInt.value;
+            _light.color = Color.HSVToRGB(sliderR.value, sliderG.value, 1);
+
+
         }
 
-        public void switchlightDown(Hand fromhand)
+        
+
+        private void OnTriggerEnter(Collider other)
         {
-            _light.SetActive(true);
+            if (other.tag == "Player")
+            {
+                Debug.Log("Trigger ENTER!");
+                playerIn = true;
+
+                sliderInt.gameObject.SetActive(true);
+                sliderR.gameObject.SetActive(true);
+                sliderG.gameObject.SetActive(true);
+
+                //txt.SetActive(true);
+
+            }
         }
-        
+
+        private void OnTriggerExit(Collider other)
+        {
+            if(other.tag == "Player")
+            {
+
+                
+                    Debug.Log("Trigger EXIT!");
+                    playerIn = false;
+
+                    sliderInt.gameObject.SetActive(false);
+                    sliderR.gameObject.SetActive(false);
+                    sliderG.gameObject.SetActive(false);
+
+                    //txt.SetActive(false);
+                
+                
+            }
+        }
 
         
+
+
+
 
 
     }
