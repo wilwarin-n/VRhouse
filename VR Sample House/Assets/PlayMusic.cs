@@ -45,9 +45,9 @@ public class PlayMusic : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
 
-            //audioSource.PlayOneShot(audioClip, volume);
+            audioSource.PlayOneShot(audioClip1, volume);
             //Point ile birden fazla müzik dinlemeyi saðlar...
-            AudioSource.PlayClipAtPoint(audioClip1, playPosition1.transform.position, volume);
+            //AudioSource.PlayClipAtPoint(audioClip1, playPosition1.transform.position, volume);
             //AudioSource.PlayClipAtPoint(audioClip2, playPosition2.position, volume);
             Debug.Log("Track1 is playing");
             /*if (handle.transform.position == playPosition1.position)

@@ -1,2 +1,0 @@
-D:\unity_workshop\VR Sample House\obj\Debug\Unity.XR.Management.Samples.Editor.csproj.AssemblyReference.cache
-D:\unity_workshop\VR Sample House\obj\Debug\Unity.XR.Management.Samples.Editor.csproj.CoreCompileInputs.cache

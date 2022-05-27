@@ -8,7 +8,7 @@ public class LightningManager : MonoBehaviour
     [SerializeField] private Light DirectionalLight;
     [SerializeField] private LightningPreset Preset;
     //Variables
-    [SerializeField, Range(0, 24)] private float TimeOfDay;
+    [SerializeField, Range(0, 48)] private float TimeOfDay;
 
 
     private void Update()
@@ -20,12 +20,12 @@ public class LightningManager : MonoBehaviour
         {
             //(Replace with a reference to the game time)
             TimeOfDay += Time.deltaTime;
-            TimeOfDay %= 24; //Modulus to ensure always between 0-24
-            UpdateLighting(TimeOfDay / 24f);
+            TimeOfDay %= 48; //Modulus to ensure always between 0-24
+            UpdateLighting(TimeOfDay /48f);
         }
         else
         {
-            UpdateLighting(TimeOfDay / 24f);
+            UpdateLighting(TimeOfDay / 48f);
         }
     }
 

@@ -1,2 +1,0 @@
-D:\unity_workshop\VR Sample House\obj\Debug\SteamVR_Editor.csproj.AssemblyReference.cache
-D:\unity_workshop\VR Sample House\obj\Debug\SteamVR_Editor.csproj.CoreCompileInputs.cache
