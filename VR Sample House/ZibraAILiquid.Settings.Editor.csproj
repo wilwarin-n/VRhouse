@@ -56,25 +56,25 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Plugins\Zibra\Liquids\Editor\UIToolkit\SettingsWindow\PackageSettingsWindow.cs" />
+    <Compile Include="Assets\Plugins\Zibra\Liquids\Editor\Settings\IPackageSettings.cs" />
+    <Compile Include="Assets\Plugins\Zibra\Liquids\Editor\UIToolkit\Controls\SettingsBlock\SettingsBlock.cs" />
     <Compile Include="Assets\Plugins\Zibra\Liquids\Editor\UIToolkit\Controls\ButtonStrip\ButtonStrip.cs" />
+    <Compile Include="Assets\Plugins\Zibra\Liquids\Editor\UIToolkit\SettingsWindow\BaseTab.cs" />
+    <Compile Include="Assets\Plugins\Zibra\Liquids\Editor\Foundation\EditorUtilities\UIToolkitEditorUtility.cs" />
     <Compile Include="Assets\Plugins\Zibra\Liquids\Editor\UIToolkit\Controls\LoadingSpinner\LoadingSpinner.cs" />
-    <Compile Include="Assets\Plugins\Zibra\Liquids\Editor\Settings\SceneViewInfo.cs" />
-    <Compile Include="Assets\Plugins\Zibra\Liquids\Editor\UIToolkit\Controls\Hyperlink\Hyperlink.cs" />
+    <Compile Include="Assets\Plugins\Zibra\Liquids\Editor\Settings\LiquidSettings.cs" />
     <Compile Include="Assets\Plugins\Zibra\Liquids\Editor\UIToolkit\Controls\SelectableLabel\SelectableLabel.cs" />
     <Compile Include="Assets\Plugins\Zibra\Liquids\Editor\UIToolkit\Controls\HelpBox\HelpBox.cs" />
-    <Compile Include="Assets\Plugins\Zibra\Liquids\Editor\Settings\LiquidSettings.cs" />
-    <Compile Include="Assets\Plugins\Zibra\Liquids\Editor\Foundation\EditorUtilities\UIToolkitEditorUtility.cs" />
-    <Compile Include="Assets\Plugins\Zibra\Liquids\Editor\UIToolkit\SettingsWindow\PackageSettingsWindow.cs" />
     <Compile Include="Assets\Plugins\Zibra\Liquids\Editor\Settings\SceneInfo.cs" />
-    <Compile Include="Assets\Plugins\Zibra\Liquids\Editor\Configs\ZibraAIPackage.cs" />
-    <Compile Include="Assets\Plugins\Zibra\Liquids\Editor\UIToolkit\AboutTab\AboutTab.cs" />
     <Compile Include="Assets\Plugins\Zibra\Liquids\Editor\Window\LiquidSettingsWindow.cs" />
-    <Compile Include="Assets\Plugins\Zibra\Liquids\Editor\Settings\IPackageSettings.cs" />
-    <Compile Include="Assets\Plugins\Zibra\Liquids\Editor\Window\Tabs\SettingsTab.cs" />
+    <Compile Include="Assets\Plugins\Zibra\Liquids\Editor\Settings\SceneViewInfo.cs" />
     <Compile Include="Assets\Plugins\Zibra\Liquids\Editor\Settings\LiquidEditorMenu.cs" />
-    <Compile Include="Assets\Plugins\Zibra\Liquids\Editor\UIToolkit\Controls\SettingsBlock\SettingsBlock.cs" />
-    <Compile Include="Assets\Plugins\Zibra\Liquids\Editor\UIToolkit\SettingsWindow\BaseTab.cs" />
+    <Compile Include="Assets\Plugins\Zibra\Liquids\Editor\UIToolkit\Controls\Hyperlink\Hyperlink.cs" />
+    <Compile Include="Assets\Plugins\Zibra\Liquids\Editor\Configs\ZibraAIPackage.cs" />
+    <Compile Include="Assets\Plugins\Zibra\Liquids\Editor\Window\Tabs\SettingsTab.cs" />
     <Compile Include="Assets\Plugins\Zibra\Liquids\Editor\Settings\PackageSettings.cs" />
+    <Compile Include="Assets\Plugins\Zibra\Liquids\Editor\UIToolkit\AboutTab\AboutTab.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Plugins\Zibra\Liquids\Editor\csc.rsp" />

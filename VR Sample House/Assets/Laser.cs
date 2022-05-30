@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using Valve.VR.Extras;
 
-public class SceneHandler : MonoBehaviour
+public class Laser : MonoBehaviour
 {
     public SteamVR_LaserPointer laserPointer;
 
@@ -18,23 +18,23 @@ public class SceneHandler : MonoBehaviour
 
     public void PointerClick(object sender, PointerEventArgs e)
     {
-        if (e.target.name == "Cube")
+        if (e.target.name == "ThrowableBall")
         {
             Debug.Log("Cube was clicked");
         }
-        else if (e.target.name == "Button")
+        else if (e.target.name == "Intensity")
         {
-            Debug.Log("Button was clicked");
+            Debug.Log("Slider was clicked");
         }
     }
 
     public void PointerInside(object sender, PointerEventArgs e)
     {
-        if (e.target.name == "Cube")
+        if (e.target.name == "ThrowableBall")
         {
             Debug.Log("Cube was entered");
         }
-        else if (e.target.name == "Button")
+        else if (e.target.name == "Intensity")
         {
             Debug.Log("Button was entered");
         }
@@ -42,11 +42,11 @@ public class SceneHandler : MonoBehaviour
 
     public void PointerOutside(object sender, PointerEventArgs e)
     {
-        if (e.target.name == "Cube")
+        if (e.target.name == "ThrowableBall")
         {
             Debug.Log("Cube was exited");
         }
-        else if (e.target.name == "Button")
+        else if (e.target.name == "Intensity")
         {
             Debug.Log("Button was exited");
         }

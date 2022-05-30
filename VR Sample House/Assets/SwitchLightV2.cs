@@ -7,16 +7,9 @@ using UnityEngine.UI;
 
 
 namespace Valve.VR.InteractionSystem
-
 {
-
-
     public class SwitchLightV2 : MonoBehaviour
     {
-        // Start is called before the first frame update
-
-        
-
         public Light _light;
 
         public static bool playerIn;
@@ -26,54 +19,18 @@ namespace Valve.VR.InteractionSystem
         public Slider sliderR;
         public Slider sliderG;
         
-
         public float defaultValue;
-
-        
-
-        
-
-        
-
         void Start()
         {
-            
-
             playerIn = false;
-
-            sliderInt = GameObject.Find("sliderInt").GetComponent<Slider>();
-            
-            sliderR = GameObject.Find("sliderR").GetComponent<Slider>();
-            
-            sliderG = GameObject.Find("sliderG").GetComponent<Slider>();
-
-            
-
-            
-
             defaultValue = 2f;
-            sliderInt.value = defaultValue;
-
-
-            /*sliderInt.gameObject.SetActive(false);
-            sliderRGB.gameObject.SetActive(false);*/
-
-            
+            sliderInt.value = defaultValue;   
         }
-
-        // Update is called once per frame
         void Update()
         {
-            
-
             _light.intensity = sliderInt.value;
             _light.color = Color.HSVToRGB(sliderR.value, sliderG.value, 1);
-
-
         }
-
-        
-
         private void OnTriggerEnter(Collider other)
         {
             if (other.tag == "Player")
@@ -84,28 +41,19 @@ namespace Valve.VR.InteractionSystem
                 sliderInt.gameObject.SetActive(true);
                 sliderR.gameObject.SetActive(true);
                 sliderG.gameObject.SetActive(true);
-
-                //txt.SetActive(true);
-
             }
         }
-
         private void OnTriggerExit(Collider other)
         {
             if(other.tag == "Player")
             {
-
-                
                     Debug.Log("Trigger EXIT!");
                     playerIn = false;
 
                     sliderInt.gameObject.SetActive(false);
                     sliderR.gameObject.SetActive(false);
                     sliderG.gameObject.SetActive(false);
-
-                    //txt.SetActive(false);
-                
-                
+  
             }
         }
 

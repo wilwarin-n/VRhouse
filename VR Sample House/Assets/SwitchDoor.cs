@@ -16,9 +16,6 @@ public class SwitchDoor : MonoBehaviour
         
         ins.SetActive(false);
 
-        
-
-
 }
 
     // Update is called once per frame
@@ -48,8 +45,6 @@ public class SwitchDoor : MonoBehaviour
             
             
         }
-
-        
     }
 
     private void OnTriggerExit(Collider other)

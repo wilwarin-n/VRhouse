@@ -16,7 +16,7 @@ public class PlayMusic : MonoBehaviour
     public float volume = 0.5f;
 
     public Transform playPosition1;
-    public Transform playPosition2;
+    //public Transform playPosition2;
 
     public GameObject handle;
 
@@ -31,7 +31,7 @@ public class PlayMusic : MonoBehaviour
 
     void Start()
     {
-        handle = GetComponent<GameObject>();
+        //handle = GetComponent<GameObject>();
     }
 
     // Update is called once per frame
@@ -42,12 +42,12 @@ public class PlayMusic : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Handle")
         {
 
-            audioSource.PlayOneShot(audioClip1, volume);
+            //audioSource.PlayOneShot(audioClip1, volume);
             //Point ile birden fazla müzik dinlemeyi saðlar...
-            //AudioSource.PlayClipAtPoint(audioClip1, playPosition1.transform.position, volume);
+            AudioSource.PlayClipAtPoint(audioClip1, playPosition1.transform.position, volume);
             //AudioSource.PlayClipAtPoint(audioClip2, playPosition2.position, volume);
             Debug.Log("Track1 is playing");
             /*if (handle.transform.position == playPosition1.position)
@@ -69,7 +69,7 @@ public class PlayMusic : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if(other.gameObject.tag == "Player")
+        if(other.gameObject.tag == "Handle")
         {
             
             //Destroy(audioClip, audioClip.length);
